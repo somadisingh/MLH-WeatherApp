@@ -173,8 +173,7 @@ function App() {
       results.weather[0].main === "Thunderstorm" ||
       results.weather[0].main === "Tornado" ||
       results.weather[0].main === "Squall" ||
-      results.weather[0].main === "Snow" ||
-      results.weather[0].main === "Rain"
+      results.weather[0].main === "Snow"
     ) {
       return setShowWarning(true);
     }
