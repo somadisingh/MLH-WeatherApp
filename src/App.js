@@ -91,7 +91,7 @@ function App() {
   const [background, setBackground] = useState(defaultBg); //default.jpg will be the default background picture in our assets
   const [inputValue, setInputValue] = useState("");
   const [activities, setActivities] = useState("");
-  const [showWarning,setShowWarning] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
   const [airQualityIndex, setAirQualityIndex] = useState(null);
   const [airQualityValue, setAirQualityValue] = useState(null);
   const [airQualityDesc, setAirQualityDesc] = useState("");
@@ -172,7 +172,9 @@ function App() {
     if (
       results.weather[0].main === "Thunderstorm" ||
       results.weather[0].main === "Tornado" ||
-      results.weather[0].main === "Squall"
+      results.weather[0].main === "Squall" ||
+      results.weather[0].main === "Snow" ||
+      results.weather[0].main === "Rain"
     ) {
       return setShowWarning(true);
     }
